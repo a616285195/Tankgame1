@@ -22,7 +22,7 @@
         </copy>
     </target>
     <target depends="build" name="test"/>
-    </target>
+
     <target name="clean">
         <delete dir="bin"/>
     </target>
