@@ -3,7 +3,7 @@
               Any modifications will be overwritten.
               To include a user specific buildfile here, simply create one in the same
               directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. --><project basedir="." default="build" name="坦克大战3.0">
+              as the first entry and export the buildfile again. --><project basedir="." default="test" name="坦克大战3.0">
     <property environment="env"/>
     <property name="ECLIPSE_HOME" value="C:/eclipse/"/>
     <property name="debuglevel" value="source,lines,vars"/>
@@ -21,7 +21,7 @@
             </fileset>
         </copy>
     </target>
-    <target name="test">
+    <target depends="build" name="test"/>
     </target>
     <target name="clean">
         <delete dir="bin"/>
