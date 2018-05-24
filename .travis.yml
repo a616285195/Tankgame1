@@ -1,4 +1,4 @@
 language: java
 
 jdk:
-    - oraclejdk1.9
+    - oraclejdk1.8
